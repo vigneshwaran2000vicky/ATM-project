@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>ATM</h1>
+    <div class="balance">
+      <h2>Your Balance: <span id="balance" >$1000</span></h2>
+    </div>
+    <div class="actions">
+      <button onclick="checkBalance()">Check Balance</button>
+      <button onclick="withdrawMoney()">Withdraw Money</button>
+      <button onclick="depositMoney()">Deposit Money</button>
+    </div>
+    <div id="withdrawal" class="hidden">
+      <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw">
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+    <div id="deposit" class="hidden">
+      <input type="number" id="depositAmount" placeholder="Enter amount to deposit">
+      <button onclick="deposit()" class="actions">Deposit</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
